@@ -1,18 +1,14 @@
-package latihan3;
+package latihan11;
 
-public class Lingkaran {
-	private int Jari2;
+public class Lingkaran extends Bentuk {
 	
-	public Lingkaran (int Jari2) {
-		this.Jari2 = Jari2;
+	public Lingkaran(int jari2) {
+		super(jari2);
 	}
 	
-	public void setJari2 (int Jari2) { 
-		this.Jari2 = Jari2;
-	}
-	
-	public int getJari2() {
-		return Jari2;
+	@Override
+	public double luas() {
+		return PHI*jari2*jari2;
 	}
 	
 }
